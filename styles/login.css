@@ -4,7 +4,7 @@ body{
 }
 
 #body{
-	background-color: #ffffee;
+	background-color: #89949a;
 	width: 920px;
 	margin: auto;
 	padding-top: 170px;
@@ -12,9 +12,9 @@ body{
 
 div.header{
 	padding: 15px 150px 0px 150px;
-	background-color: #CCCCFF;
-	border-top: 3px solid blue;
-	border-bottom: 3px solid blue;
+	background-color: #2a576f;
+	border-top: 3px solid #012d44;
+	border-bottom: 3px solid #012d44;
 }
 
 div.header img{
@@ -26,6 +26,7 @@ div.header img{
 
 div.header h1{
 	font-size: 60px;
+	color: #d6dcdf;
 	padding-left: 170px;
 	padding-top: 90px;
 	margin-top: 0px;
