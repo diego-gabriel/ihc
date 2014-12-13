@@ -13,7 +13,7 @@ body{
 
 div.header{
 	padding: 15px 150px 0px 150px;
-	background-color: #023f45;
+	background-color: #2a576f;
 	border-top: 3px solid #001f22;
 	border-bottom: 4px solid #001f22;
 }
@@ -27,7 +27,7 @@ div.header img{
 
 div.header h1{
 	font-size: 60px;
-	color: #b8bdbe;
+	color: #d6dcdf;
 	padding-left: 170px;
 	padding-top: 90px;
 	margin-top: 0px;

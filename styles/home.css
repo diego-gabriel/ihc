@@ -7,6 +7,7 @@ body{
 	background-color: #d6dcdf;
 	width: 920px;
 	margin: auto;
+	padding: 20px;
 }
 
 div.header{
@@ -33,6 +34,8 @@ div.header h1{
 }
 
 #homeIcon{
+	border: 3px solid #012d44;
+	border-radius: 8px;
 	width: 50px;
 	height: 50px;
 }	
