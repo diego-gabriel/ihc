@@ -4,7 +4,8 @@ body{
 }
 
 #body{
-	background-color: #89949a;
+	background-color: #eeeeee;
+	color: #001f22;
 	width: 920px;
 	margin: auto;
 	padding-top: 170px;
@@ -12,9 +13,9 @@ body{
 
 div.header{
 	padding: 15px 150px 0px 150px;
-	background-color: #2a576f;
-	border-top: 3px solid #012d44;
-	border-bottom: 3px solid #012d44;
+	background-color: #023f45;
+	border-top: 3px solid #001f22;
+	border-bottom: 4px solid #001f22;
 }
 
 div.header img{
@@ -26,7 +27,7 @@ div.header img{
 
 div.header h1{
 	font-size: 60px;
-	color: #d6dcdf;
+	color: #b8bdbe;
 	padding-left: 170px;
 	padding-top: 90px;
 	margin-top: 0px;
@@ -34,8 +35,9 @@ div.header h1{
 }	
 
 #login{
-	background-color: #eeeeee;
-	border: 2px solid #bbbbbb;
+	color: #001f22;
+	background-color: #5b868a;
+	border: 2px solid #023f45;
 	border-radius: 25px;
 	margin: auto;
 	padding-top: 150px;
