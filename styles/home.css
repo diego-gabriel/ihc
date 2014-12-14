@@ -1,6 +1,57 @@
+div.headerHome{
+	display: inline-block;
+	margin-left: 30px;
+}
+
 #homeIcon{
 	border: 3px solid #012d44;
 	border-radius: 8px;
 	width: 50px;
 	height: 50px;
+	float: left;
 }	
+
+ul.menu{
+	list-style: none;
+	border: 3px solid #012d44;
+	border-radius: 30px;
+	float: left;
+	margin: 0px;
+	margin-left: 20px;
+	padding-right: 0px;
+}
+
+ul.menu li{
+	float: left;
+	padding: 15px;
+	padding-left: 40px; 
+	margin-right: 0px;
+}
+
+li.first{
+	margin-left: -41px;
+	border-radius: 25px 0px 0px 25px;
+}
+
+li.darker{
+	background-color: #2a576f;
+	color: #d6dcdf;
+}
+
+li.last{
+	padding-right: -50px;
+	border-radius: 0px 25px 25px 0px;
+}
+
+ul.menu li:hover{
+	background-color: #012d44;
+	color: #d6dcdf;
+}
+
+li.left-b{
+	border-left: 3px solid #012d44;
+}
+
+.clear{
+	clear: both;
+}

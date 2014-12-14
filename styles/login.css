@@ -5,10 +5,12 @@ body{
 
 #body{
 	background-color: #eeeeee;
-	color: #001f22;
+	color: #012d44;
 	width: 920px;
 	margin: auto;
-	padding-top: 20px;
+	padding: 20px;
+	min-height: 600px;
+	position: relative;
 }
 
 div.header{
@@ -68,4 +70,29 @@ input.login{
 
 sup.registered{
 	font-size: 20px;	
+}
+
+#footerline{
+	width: 480px;
+	margin: auto;
+	border-top: 1px solid #012d44;
+
+}
+
+
+footer {
+	text-align: center;
+	margin: auto;
+	font-size: 14px;
+	min-width: 920px;
+	position: absolute;
+	bottom: 20px;
+}
+
+footer i{
+	font-size: 12px;
+}
+
+footer p{
+	margin-bottom: 5px;
 }
