@@ -14,9 +14,11 @@ body{
 }
 
 div.header{
+	position: relative;
 	padding: 15px 150px 0px 150px;
 	background-color: #2a576f;
 	border-top: 3px solid #012d44;
+	color: #d6dcdf;
 	border-bottom: 4px solid #012d44;
 }
 
@@ -25,6 +27,16 @@ div.header img{
 	margin-bottom: 5px;
 	width: 150px;
 	height: 150px;
+}
+
+div.user-menu{
+	position: absolute;
+	text-align: right;
+	top: 20px;
+	width: 200px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 800px;
 }
 
 div.header h1{
