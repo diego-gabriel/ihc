@@ -100,6 +100,7 @@ a.no-style, a.no-style:hover, a.no-style:visited,
 a.no-style:active, a.no-style:link{
 	text-decoration: none;
 	color: #d6dcdf;
+	display: block;
 }
 
 div.header h1{
