@@ -54,6 +54,7 @@ function initMainMenu(){
 
 function cerrarSesion() {
 	localStorage.clear();
+}
 
 function initStrippedTable () {
 	table = $('table.stripped tbody');
