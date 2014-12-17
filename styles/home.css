@@ -43,7 +43,7 @@ li.last{
 	border-radius: 0px 25px 25px 0px;
 }
 
-ul.menu li:hover{
+ul.menu li:hover, div.user-menu:hover{
 	background-color: #012d44;
 	color: #d6dcdf;
 }
