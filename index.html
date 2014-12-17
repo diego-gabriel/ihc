@@ -4,6 +4,7 @@
 	<title>IHC Formularios</title>
 	<script type="text/javascript" src = "javascript/jquery.js"></script>
 	<script type="text/javascript" src = "javascript/partials.js"></script>
+	<script type="text/javascript" src = "javascript/sesion.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles/login.css">
 </head>
 
@@ -21,15 +22,15 @@
 		<table>
 			<tr>
 				<td><label for = "username">Usuario:</label></td>
-				<td><input name = "username" type = "text" required></td>
+				<td><input id = "username" name = "username" type = "text" required></td>
 			</tr>
 			<tr>
 				<td><label for = "password">Contrase&ntilde;a:</label></td>
-				<td><input name = "password" type = "password" required></td>
+				<td><input id = "password" name = "password" type = "password" required></td>
 			</tr>
 		</table>
 		
-		<input value= "Login" type = "submit" class = "login">
+		<input value= "Login" type = "submit" class = "login" onclick= "iniciarSesion()">
 
 		<p id = "register">No tienes cuenta aun? <a href="registrar.html">registrate aqui!</a></p>
 	</form>

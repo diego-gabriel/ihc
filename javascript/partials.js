@@ -13,7 +13,7 @@ function renderHeader () {
 
 function insertUserMenu () {
 	header = $('div.header-content');
-	header.append("<div class = 'user-menu'> Bienvenido @Usuario!</div>");
+	header.append("<div class = 'user-menu'> Bienvenido "+ localStorage.getItem("username") +"!</div>");
 	$(".user-menu").append("<ul></ul>");
 	menu = $('.user-menu');
 	menu.append('<li>opcion1</li>');
