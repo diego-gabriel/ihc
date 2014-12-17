@@ -4,9 +4,7 @@
 	<title>IHC Formularios</title>
 
 	<script type="text/javascript" src = "javascript/jquery.js"></script>
-	<script type="text/javascript" src = "javascript/footer.js"></script>
-	<script type="text/javascript" src = "javascript/menu.js"></script>
-	<script type="text/javascript" src = "javascript/user.js"></script>
+	<script type="text/javascript" src = "javascript/partials.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles/home.css">
 	<link rel="stylesheet" type="text/css" href="styles/login.css">
 </head>
@@ -16,16 +14,13 @@
 
 
 <div class = "header">
-		<img src="images/logo.gif">
-		<h1>IHC Formularios<sup class = "registered">&reg;</sup></h1>
 </div>
 
 <div id = "body">
 	<h2>Tus Formularios</h2>
 
 	<div class = "headerHome">
-			<input id = "homeIcon" type="image" src="images/home.png">
-
+			<input id = "homeIcon" type="image" src="images/home.png" onclick="location.href = 'home.html';">
 		<ul class = "menu">
 				<li>A&ntilde;adir Formulario</li>
 				<li>Borrar Formulario(s)</li>
@@ -33,6 +28,8 @@
 		</ul>
 	</div>
 	<div class = "clear"></div>
+	<table class = "formularios">
+	</table>
 	<p>lalala</p>
 </div>
 

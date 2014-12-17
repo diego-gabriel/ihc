@@ -1,5 +1,6 @@
 body{
 	font-family: Arial;
+	min-width: 1100px;
 	margin: 0px;
 }
 
@@ -15,11 +16,19 @@ body{
 
 div.header{
 	position: relative;
-	padding: 15px 150px 0px 150px;
+	padding: 15px 0px 0px 0px;
+	margin: auto;
 	background-color: #2a576f;
 	border-top: 3px solid #012d44;
 	color: #d6dcdf;
 	border-bottom: 4px solid #012d44;
+}
+
+div.header-content{
+	width: 1080px;
+	margin: auto;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 div.header img{
