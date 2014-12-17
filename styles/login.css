@@ -56,11 +56,22 @@ div.user-menu{
 	box-shadow: 5px -5px 10px #012d44;
 	text-shadow: 2px -2px 2px #012d44;
 }
+div.user-menu:hover{
+	z-index: 10;
+	background-color: #012d44;
+	color: #d6dcdf;
+}
+
+div.user-menu li{
+	border-top: 2px solid #2a576f;
+	padding-top: 5px;
+	font-size: 15px;
+}
 
 div.user-menu li:hover{
 	background-color: #2a576f;
 	border-left: 2px solid #d6dcdf;
-	padding-top: 5px;
+	font-size: 17px;
 }
 div.user-data{
 	z-index: 5;
@@ -69,14 +80,20 @@ div.user-data{
 	font-size: 15px;
 	top: 20px;
 	width: 200px;
-	margin-top: 50px;
+	margin-top: 70px;
 	margin-right: 20px;
 	margin-left: 800px;
 }
+
+p.no-margin{
+	margin: 0px;
+}
 #user-menu{
-	list-style: none;
-	padding: 0px;
 	z-index: 10;
+	list-style: none;
+	padding: 18px 0px 7px 0px;
+	margin: 0px;
+	background-color: #012d44;
 }
 
 a.no-style, a.no-style:hover, a.no-style:visited,

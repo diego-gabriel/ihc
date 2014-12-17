@@ -21,7 +21,8 @@ function insertUserMenu () {
 	header.append("<div class = 'user-menu'> Bienvenido "+ localStorage.getItem("username") +"!</div>");
 	header.append("<div class = 'user-data'></div>");
 	userData = $('div.user-data');
-	userData.append('<p> NIT: ' + localStorage.getItem('nit') + '</p>');
+	userData.append('<p class = "no-margin"> NIT: ' + localStorage.getItem('nit') + '</p>');
+	userData.append('<p class = "no-margin"> C.I.: ' + localStorage.getItem('ci') + '</p>');
 	$(".user-menu").append("<ul id = 'user-menu'></ul>");
 	menu = $('#user-menu');
 	menu.append('<li> <a href="editarCuenta.html" class = "no-style">Editar Cuenta</a></li>	');
