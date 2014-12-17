@@ -54,10 +54,8 @@ function initMainMenu(){
 function initStrippedTable () {
 	table = $('table.stripped tbody');
 	var rows = table.children();
-
-	for (var i = 0; i < rows.length; i++){
-		option = rows[i].find('input');
-		formName = rows[i].find('td:last-child');
-		formName.html("formilario" + i);
-	}
+	rows.each(function(index){
+		$(this).find('input').attr("id", "f-"+index);
+		$(this).find('td:last-child').html("formulario" + index);
+	});
 }
