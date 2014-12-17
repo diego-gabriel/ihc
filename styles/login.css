@@ -39,6 +39,7 @@ div.header img{
 }
 
 div.user-menu{
+	z-index: 10;
 	position: absolute;
 	text-align: right;
 	font-size: 18px;
@@ -61,10 +62,27 @@ div.user-menu li:hover{
 	border-left: 2px solid #d6dcdf;
 	padding-top: 5px;
 }
-
+div.user-data{
+	z-index: 5;
+	position: absolute;
+	text-align: right;
+	font-size: 15px;
+	top: 20px;
+	width: 200px;
+	margin-top: 50px;
+	margin-right: 20px;
+	margin-left: 800px;
+}
 #user-menu{
 	list-style: none;
 	padding: 0px;
+	z-index: 10;
+}
+
+a.no-style, a.no-style:hover, a.no-style:visited,
+a.no-style:active, a.no-style:link{
+	text-decoration: none;
+	color: #d6dcdf;
 }
 
 div.header h1{

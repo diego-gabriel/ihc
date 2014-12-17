@@ -2,7 +2,7 @@ $(document).ready(function(){
 	renderHeader();
 
 	url = document.URL;
-	if (url.search("index.html") != url.length - 10)
+	if (url.search("index.html") == -1 && url.search("registrar.html") == -1)
 		insertUserMenu();
 
 	initMainMenu();
@@ -19,11 +19,13 @@ function renderHeader () {
 function insertUserMenu () {
 	header = $('div.header-content');
 	header.append("<div class = 'user-menu'> Bienvenido "+ localStorage.getItem("username") +"!</div>");
+	header.append("<div class = 'user-data'></div>");
+	userData = $('div.user-data');
+	userData.append('<p> NIT: ' + localStorage.getItem('nit') + '</p>');
 	$(".user-menu").append("<ul id = 'user-menu'></ul>");
 	menu = $('#user-menu');
-	menu.append('<li>opcion1</li>');
-	menu.append('<li>opcion2</li>');
-	menu.append('<li>opcion3</li>');
+	menu.append('<li> <a href="editarCuenta.html" class = "no-style">Editar Cuenta</a></li>	');
+	menu.append('<li> <a href="index.html" class = "no-style">Cerrar Sesion</a></li>	');
 	menu.hide();
 	$('div.user-menu').hover(toggleMenu, toggleMenu);
 }
