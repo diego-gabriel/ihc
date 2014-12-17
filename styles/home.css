@@ -80,6 +80,10 @@ th.id{
 	width: 15px;
 }
 
+tr.stripped{
+	background-color: #d6dcdf;
+}
+
 td{
 	width: 15px;
 }

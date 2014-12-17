@@ -57,5 +57,8 @@ function initStrippedTable () {
 	rows.each(function(index){
 		$(this).find('input').attr("id", "f-"+index);
 		$(this).find('td:last-child').html("formulario" + index);
+		if (index % 2 == 0){
+			$(this).addClass("stripped");
+		}
 	});
 }
