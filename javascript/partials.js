@@ -1,8 +1,13 @@
 $(document).ready(function(){
 	renderHeader();
-	insertUserMenu();
+
+	url = document.URL;
+	if (url.search("index.html") != url.length - 10)
+		insertUserMenu();
+
 	initMainMenu();
 	renderFooter();
+
 });
 
 function renderHeader () {
@@ -14,11 +19,17 @@ function renderHeader () {
 function insertUserMenu () {
 	header = $('div.header-content');
 	header.append("<div class = 'user-menu'> Bienvenido "+ localStorage.getItem("username") +"!</div>");
-	$(".user-menu").append("<ul></ul>");
-	menu = $('.user-menu');
+	$(".user-menu").append("<ul id = 'user-menu'></ul>");
+	menu = $('#user-menu');
 	menu.append('<li>opcion1</li>');
 	menu.append('<li>opcion2</li>');
 	menu.append('<li>opcion3</li>');
+	menu.hide();
+	$('div.user-menu').hover(toggleMenu, toggleMenu);
+}
+
+function toggleMenu(){
+	$('#user-menu').stop().slideToggle(500);
 }
 
 function renderFooter () {
