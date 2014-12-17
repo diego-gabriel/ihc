@@ -46,13 +46,43 @@ li.last{
 ul.menu li:hover, div.user-menu:hover{
 	background-color: #012d44;
 	color: #d6dcdf;
+	cursor: hand;
 }
 
 li.left-b{
 	border-left: 3px solid #012d44;
 }
 
+div.form-field{
+	width: 700px;
+	min-height: 320px;
+	border: 2px solid #012d44;
+	margin: auto;
+	margin-top: 30px;
+}
+table{
+	width: 100%;
+	z-index: 10;
+}
 
+table, div.form-field{
+	border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #012d44;
+}
+
+th{
+	background-color: #012d44;
+	color: #d6dcdf;
+}
+th.id{
+	width: 15px;
+}
+
+td{
+	width: 15px;
+}
 .clear{
 	clear: both;
 }

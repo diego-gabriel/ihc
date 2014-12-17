@@ -7,6 +7,7 @@ $(document).ready(function(){
 
 	initMainMenu();
 	renderFooter();
+	initStrippedTable();
 
 });
 
@@ -48,4 +49,15 @@ function initMainMenu(){
 	$('ul.menu li:gt(0)').addClass("left-b");
 	$('ul.menu li:first').addClass("first");
 	$('ul.menu li:last').addClass("last");
+}
+
+function initStrippedTable () {
+	table = $('table.stripped tbody');
+	var rows = table.children();
+
+	for (var i = 0; i < rows.length; i++){
+		option = rows[i].find('input');
+		formName = rows[i].find('td:last-child');
+		formName.html("formilario" + i);
+	}
 }
