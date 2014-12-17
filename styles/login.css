@@ -101,6 +101,7 @@ a.no-style:active, a.no-style:link{
 	text-decoration: none;
 	color: #d6dcdf;
 	display: block;
+	cursor: pointer;
 }
 
 div.header h1{
@@ -157,12 +158,13 @@ sup.registered{
 
 
 footer {
+	z-index: 10;	
 	text-align: center;
-	margin: auto;
+	margin: auto;	
+	background-color: #eeeeee;
+	padding-top: 30px;
 	font-size: 14px;
-	min-width: 920px;
-	position: absolute;
-	bottom: 20px;
+	min-width: 940px;
 }
 
 footer i{
