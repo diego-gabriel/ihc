@@ -27,7 +27,7 @@ function insertUserMenu () {
 	$(".user-menu").append("<ul id = 'user-menu'></ul>");
 	menu = $('#user-menu');
 	menu.append('<li> <a href="editarCuenta.html" class = "no-style">Editar Cuenta</a></li>	');
-	menu.append('<li> <a href="index.html" class = "no-style">Cerrar Sesion</a></li>	');
+	menu.append('<li onclick = "cerrarSesion()"> <a href="index.html" class = "no-style">Cerrar Sesion</a></li>	');
 	menu.hide();
 	$('div.user-menu').hover(toggleMenu, toggleMenu);
 }
@@ -50,6 +50,10 @@ function initMainMenu(){
 	$('ul.menu li:first').addClass("first");
 	$('ul.menu li:last').addClass("last");
 }
+
+
+function cerrarSesion() {
+	localStorage.clear();
 
 function initStrippedTable () {
 	table = $('table.stripped tbody');
