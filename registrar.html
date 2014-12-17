@@ -5,6 +5,7 @@
 	
 	<script type="text/javascript" src = "javascript/jquery.js"></script>
 	<script type="text/javascript" src = "javascript/partials.js"></script>
+	<script type="text/javascript" src = "javascript/sesion.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles/login.css">
 </head>
 <body>
@@ -19,28 +20,28 @@
 		<table>
 			<tr>
 				<td><label for = "username">Usuario:</label></td>
-				<td><input name = "username" type = "text" required></td>
+				<td><input id = "username" name = "username" type = "text" required></td>
 			</tr>
 			<tr>
 				<td><label for = "password">Contrase&ntilde;a:</label></td>
-				<td><input name = "password" type = "password" required></td>
+				<td><input id = "password" name = "password" type = "password" required></td>
 			</tr>
 			<tr>
 				<td><label for = "email">E-mail:</label></td>
-				<td><input name = "email" type = "email" required></td>
+				<td><input id = "email" name = "email" type = "email" required></td>
 			</tr>
 			<tr>
 				<td><label for = "nit">NIT:</label></td>
-				<td><input name = "nit" type = "number" required></td>
+				<td><input id = "nit" name = "nit" type = "number" required></td>
 			</tr>
 			</tr>
 			<tr>
 				<td><label for = "ci">C.I.:</label></td>
-				<td><input name = "ci" type = "number" required></td>
+				<td><input id = "ci" name = "ci" type = "number" required></td>
 			</tr>
 		</table>
 		
-		<input value = "Registrar" type = "submit" class = "login">
+		<input value = "Registrar" onclick = "registrar()" type = "submit" class = "login">
 
 		<p id = "register">Tienes cuenta? <a href="index.html">inicia sesion!</a></p>
 	</form>

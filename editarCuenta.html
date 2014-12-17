@@ -5,6 +5,7 @@
 
 	<script type="text/javascript" src = "javascript/jquery.js"></script>
 	<script type="text/javascript" src = "javascript/partials.js"></script>
+	<script type="text/javascript" src = "javascript/datosCuenta.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles/home.css">
 	<link rel="stylesheet" type="text/css" href="styles/login.css">
 </head>
@@ -21,15 +22,15 @@
 				<table>
 					<tr>
 						<td><label for = "username">Nombre:</label></td>
-						<td><input value = "nombreee" name = "username" type = "text" readonly></td>
+						<td><span id = "username"></span></td>
 					</tr>
 					<tr>
 						<td><label for = "password">Contrase&ntilde;a:</label></td>
-						<td><input name = "password" type = "password" required></td>
+						<td><input name = "password" type = "text" required></td>
 					</tr>
 					<tr>
 						<td><label for = "nit">NIT:</label></td>
-						<td><input value = "123" name = "nit" type = "number" readonly></td>
+						<td><span id = "nit"></span></td>
 					</tr>
 					<tr>
 						<td><label for = "email">E-mail:</label></td>
@@ -37,12 +38,12 @@
 					</tr>
 					<tr>
 						<td><label for = "ci">CI:</label></td>
-						<td><input value = "123" name = "ci" type = "number" readonly></td>
+						<td><span id = "ci"></span></td>
 					</tr>
 				</table>
 			
-				<input value = "Guardar" type = "submit" class = "login">
-				<input value = "Volver" type = "submit" onclick="location.href='home.html'">
+				<input onclick = "actualizarDatos()" value = "Guardar" type = "submit" class = "login">
+				<input value = "Volver" type = "submit" onclick="location.href='home.html'; return false;">
 			</form>
 		</div>
 	</div>

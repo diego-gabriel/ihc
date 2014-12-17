@@ -1,13 +1,21 @@
 function iniciarSesion(){
-	var username = document.getElementById("username");
-	var password = document.getElementById("password");
 	if(typeof(Storage) !== "undefined") {
-		guardarUP(username.value, password.value);
+		guardarUP(username, password);
 	}
 }
 
-function guardarUP(username, password){
-	localStorage.setItem("username", username);
-	localStorage.setItem("password", password);
+function registrar(){
+	if(typeof(Storage) !== "undefined") {
+		guardarUP();
+		localStorage.setItem("email", $("#email").val());
+		localStorage.setItem("nit", $("#nit").val());
+		localStorage.setItem("ci", $("#ci").val());
+	}
 }
+
+function guardarUP(){
+	localStorage.setItem("username", $("#username").val());
+	localStorage.setItem("password", $("#password").val());
+}
+
 
