@@ -78,6 +78,7 @@ table.form, div.form-field{
 }
 table.form, table.form th, table.form td {
     border: 1px solid #012d44;
+    padding: 0px;
 }
 
 table.form th{
@@ -85,7 +86,7 @@ table.form th{
 	color: #d6dcdf;
 }
 table.form th.id{
-	width: 30px;
+	width: 35px;
 }
 
 tr.stripped{
