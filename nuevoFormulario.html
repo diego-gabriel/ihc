@@ -9,33 +9,35 @@
 	<link rel="stylesheet" type="text/css" href="styles/login.css">
 </head>
 
-
 <body>
-
 
 <div class = "header">
 </div>
 
 <div id = "body">
-	<h2><input type = "text" value "Nuevo Formulario 110"></h2>
+	<h2><input type = "text" value = "Formulario 110 sin nombre*" name = "nombreFormulario" required class = "title"></h2>
 
 	<div class = "headerHome">
 		<input id = "homeIcon" type="image" src="images/home.png" onclick="location.href = 'home.html';">
 		<ul class = "menu">
-				<li onclick="location.href='nuevoFormulario.html'">A&ntilde;adir Formulario</li>
-				<li>Borrar Formulario(s)</li>
-				<li onclick="location.href='papeleraForm.html'">Papelera</li>
+			<li onclick = "addFormRow()">A&ntilde;adir facturas</li>
+			<li>Borrar factura(s)</li>
+			<li>Papelera</li>
+			<li onclick = 'saveForm()'>Guardar</li>
 		</ul>
 	</div>
 	<div class = "clear"></div>
-	<div class = "form-field">
-		<table class = "formularios stripped">
+	<div class = "form-field bigger">
+		<table class = "formularios stripped  centered-text">
 			<tr>
-				<th class = "id"></th>
-				<th>Nombre de Formulario</th>
-			</tr>
-
-			
+				<th class = "id">id</th>
+				<th>NIT</th>
+				<th>Numero de Factura</th>
+				<th>Autorizacion</th>
+				<th>Fecha</th>	
+				<th>Importe</th>
+				<th>Cod. de Control</th>
+			</tr>			
 		</table>
 	</div>
 </div>
