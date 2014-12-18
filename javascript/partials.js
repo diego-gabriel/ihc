@@ -88,8 +88,3 @@ function addFormRow () {
 		row.addClass('stripped');
 	
 }
-
-function saveForm(){
-	var title = $("input[name='nombreFormulario']").val();
-	alert("Formulario: " + title + "guardado");
-}
