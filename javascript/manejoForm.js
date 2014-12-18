@@ -1,8 +1,8 @@
 function borrarForm(){
-	borrarFormulario(true);
+	borrarSeleccion(true);
 }
 
-function borrarFormulario(confirm_required){
+function borrarSeleccion(confirm_required){
 	if (!confirm_required || confirm("esta seguro?")){	
 		var checks = $("input:checked");
 		checks.each(function(index){
@@ -12,5 +12,13 @@ function borrarFormulario(confirm_required){
 }
 
 function restaurar(){
-	borrarFormulario(false);
+	borrarSeleccion(false);
+}
+
+function borrarFacturas(){
+	borrarSeleccion(true);
+}
+
+function restaurarFacturas(){
+	borrarSeleccion(false);
 }

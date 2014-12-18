@@ -3,6 +3,7 @@
 	<title>IHC Formularios</title>
 	<script type="text/javascript" src = "javascript/jquery.js"></script>
 	<script type="text/javascript" src = "javascript/partials.js"></script>
+	<script type="text/javascript" src = "javascript/manejoForm.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles/home.css">
 	<link rel="stylesheet" type="text/css" href="styles/login.css">
 </head>
@@ -17,8 +18,9 @@
 			<input id = "homeIcon" type="image" src="images/home.png" onclick="location.href='home.html'">
 
 			<ul class = "menu">
-				<li>Usar Factura</li>
-				<li>Borrar Permanentemente</li>
+				<li onclick="restaurarFacturas()">Usar Factura</li>
+				<li onclick="borrarFacturas()">Borrar Permanentemente</li>
+
 				<li onclick="history.go(-1);">Volver</li>
 			</ul>
 		</div>
@@ -35,7 +37,7 @@
 				<th>Cod. de Control</th>
 			</tr>
 			<tr>
-				<td>1</td>
+				<td>1<input type="checkbox"></td>
 				<td>12345678</td>
 				<td>351</td>
 				<td>16455354534</td>
@@ -44,7 +46,7 @@
 				<td></td>
 			</tr>
 			<tr>
-				<td>2</td>
+				<td>2<input type="checkbox"></td>
 				<td>343636346</td>
 				<td>453</td>
 				<td>13552352</td>
@@ -53,7 +55,7 @@
 				<td></td>
 			</tr>
 			<tr>
-				<td>3</td>
+				<td>3<input type="checkbox"></td>
 				<td>352113123</td>
 				<td>765</td>
 				<td>123143435</td>
