@@ -67,24 +67,24 @@ table.centered-text th{
 	text-align: center;
 }
 
-table{
+table.form{
 	width: 100%;
 	z-index: 10;
 }
 
 
-table, div.form-field{
+table.form, div.form-field{
 	border-collapse: collapse;
 }
-table, th, td {
+table.form, table.form th, table.form td {
     border: 1px solid #012d44;
 }
 
-th{
+table.form th{
 	background-color: #012d44;
 	color: #d6dcdf;
 }
-th.id{
+table.form th.id{
 	width: 30px;
 }
 
