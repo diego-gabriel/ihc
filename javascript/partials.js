@@ -87,6 +87,7 @@ function addFormRow () {
 	row.removeClass("last");
 	if (number % 2 == 0)
 		row.addClass('stripped');
+	
 }
 
 function saveForm(){
