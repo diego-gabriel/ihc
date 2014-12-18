@@ -85,26 +85,36 @@ th{
 	color: #d6dcdf;
 }
 th.id{
-	width: 15px;
+	width: 30px;
 }
 
 tr.stripped{
 	background-color: #d6dcdf;
 }
 
-td{
-	width: 15px;
-}
 
 input.title{
-	background-color: #eeeeee;
-	border: 0px;
 	font-size: 45px;
 }
 
-input.title:focus{
-	outline: 0px;
+input.box{
+	display: block;
+	width: 100%;
 }
+
+input.no-style{
+	background-color: #eeeeee;
+	border: 0px;
+}
+
+ input.stripped{
+
+ 	background-color: #d6dcdf
+ }
+
+ input.checkbox{
+ 	margin: 4px;
+ }
 
 .clear{
 	clear: both;
