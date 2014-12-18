@@ -8,7 +8,6 @@ $(document).ready(function(){
 	initMainMenu();
 	renderFooter();
 	initStrippedTable();
-
 });
 
 function renderHeader () {
@@ -60,7 +59,7 @@ function initStrippedTable () {
 	table = $('table.stripped tbody');
 	var rows = table.children();
 	rows.each(function(index){
-		$(this).find('input').attr("id", "f-"+index);
+		$(this).attr("id", "f-"+index);
 		$(this).find('td:last-child').html("formulario" + index);
 		if (index % 2 == 0){
 			$(this).addClass("stripped");
@@ -80,4 +79,3 @@ function addFormRow () {
 	}
 	row.removeClass("last");
 }
-
