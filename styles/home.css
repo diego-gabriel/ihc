@@ -60,10 +60,18 @@ div.form-field{
 	margin: auto;
 	margin-top: 30px;
 }
+div.form-field.bigger{
+	width: 800px;
+}
+table.centered-text th{
+	text-align: center;
+}
+
 table{
 	width: 100%;
 	z-index: 10;
 }
+
 
 table, div.form-field{
 	border-collapse: collapse;
@@ -87,6 +95,17 @@ tr.stripped{
 td{
 	width: 15px;
 }
+
+input.title{
+	background-color: #eeeeee;
+	border: 0px;
+	font-size: 45px;
+}
+
+input.title:focus{
+	outline: 0px;
+}
+
 .clear{
 	clear: both;
 }

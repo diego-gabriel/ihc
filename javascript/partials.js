@@ -67,3 +67,17 @@ function initStrippedTable () {
 		}
 	});
 }
+
+function addFormRow () {
+	$('table.formularios tbody').append("<tr class = 'last'></tr>");
+	row = $('table.formularios tr.last');
+	for (var i = 0; i < 7; i++){
+		row.append("<td></td>");
+		console.log(i);
+		if (i == 0){
+			row.find(":first-child").html($('table.formularios tbody').children().length-1);
+		}	
+	}
+	row.removeClass("last");
+}
+
