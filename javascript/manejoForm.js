@@ -22,3 +22,12 @@ function borrarFacturas(){
 function restaurarFacturas(){
 	borrarSeleccion(false);
 }
+
+function saveForm(){
+	var title = $("input[name='nombreFormulario']").val();
+	alert("Formulario: " + title + " guardado");
+}
+
+function exportarForm(){
+	
+}

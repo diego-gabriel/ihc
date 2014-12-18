@@ -92,11 +92,6 @@ function addFormRow () {
 	
 }
 
-function saveForm(){
-	var title = $("input[name='nombreFormulario']").val();
-	alert("Formulario: " + title + "guardado");
-}
-
 function setFormTitle(){
 	if (document.URL.search("editarFormulario.html") != -1){
 		var title = $("input[name='nombreFormulario']");
@@ -117,7 +112,3 @@ function getUrlParameter(sParam)
         }
     }
 } 
-
-function exportar(){
-	//alert("IMPLEMENTAR");
-}
