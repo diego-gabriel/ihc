@@ -1,10 +1,16 @@
 function borrarForm(){
-	var checks = $("input:checked");
-	checks.each(function(index){
-		$(this).parent().parent().fadeOut(500);
-	});
+	borrarFormulario(true);
+}
+
+function borrarFormulario(confirm_required){
+	if (!confirm_required || confirm("esta seguro?")){	
+		var checks = $("input:checked");
+		checks.each(function(index){
+			$(this).parent().parent().fadeOut(500);
+		});
+	}
 }
 
 function restaurar(){
-	borrarForm();
+	borrarFormulario(false);
 }
