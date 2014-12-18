@@ -70,12 +70,25 @@ function initStrippedTable () {
 function addFormRow () {
 	$('table.formularios tbody').append("<tr class = 'last'></tr>");
 	row = $('table.formularios tr.last');
+	var number = $('table.formularios tbody').children().length-1;
 	for (var i = 0; i < 7; i++){
-		row.append("<td></td>");
-		console.log(i);
+		if (number % 2 == 0)
+			row.append("<td><input class = 'no-style box stripped' type = 'text'></td>");
+		else
+			row.append("<td><input class = 'no-style box' type = 'text'></td>");
 		if (i == 0){
-			row.find(":first-child").html($('table.formularios tbody').children().length-1);
+			row.find(":first-child").html(number).append("<input type = 'checkbox' class = 'checkbox'>");
+		}
+		if (i == 1){
+			row.find(":last-child").focus();
 		}	
 	}
 	row.removeClass("last");
+	if (number % 2 == 0)
+		row.addClass('stripped');
+}
+
+function saveForm(){
+	var title = $("input[name='nombreFormulario']").val();
+	alert("Formulario: " + title + "guardado");
 }
