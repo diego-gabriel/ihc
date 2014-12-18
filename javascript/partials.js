@@ -10,7 +10,7 @@ $(document).ready(function(){
 	initStrippedTable();
 	setFormTitle();
 
-	$(".inline").colorbox({inline:true, href: "#inline_content", width:"50%"});
+	$(".inline").colorbox({inline:true, href: "#inline_content", width:"400px", closeButton: false});
 });
 
 function renderHeader () {

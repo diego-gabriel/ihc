@@ -7,7 +7,7 @@
 	<script type="text/javascript" src = "javascript/partials.js"></script>
 	<script type="text/javascript" src = "javascript/manejoForm.js"></script>
 	<script type="text/javascript" src = "javascript/jquery.colorbox.js"></script>
-	
+
 	<link rel="stylesheet" type="text/css" href="styles/colorbox.css">
 	<link rel="stylesheet" type="text/css" href="styles/home.css">
 	<link rel="stylesheet" type="text/css" href="styles/login.css">
@@ -68,10 +68,17 @@
 
 <!-- This contains the hidden content for inline calls -->
 		<div style='display:none'>
-			<div id='inline_content' style='padding:10px; background:#fff;'>
-				<input type = "checkbox"> <label>Descargar como : Formulario1 (.pdf y .dex)</label> <br>
-				<input type = "checkbox"> <label>Enviar a: usuario@email.com</label><br>
-				<input type = "submit">
+			<div id='inline_content'>
+				<div class = "inline-form">
+				<div class = "line fst">
+					<input type = "checkbox"> <label>Descargar como : Formulario (.pdf y .dex)</label> <br>
+				</div>
+				<div class = "line">
+					<input type = "checkbox"> <label>Enviar a: usuario@email.com</label><br>
+				</div>
+
+					<input id = "boton" type = "submit">
+				</div>
 			</div>
 		</div>
 

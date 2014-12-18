@@ -182,3 +182,8 @@ footer i{
 footer p{
 	margin-bottom: 5px;
 }
+
+
+#div.inline-form input{
+    margin: 50px;   
+}
