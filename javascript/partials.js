@@ -8,6 +8,9 @@ $(document).ready(function(){
 	initMainMenu();
 	renderFooter();
 	initStrippedTable();
+	setFormTitle();
+
+	$(".inline").colorbox({inline:true, href: "#inline_content", width:"50%"});
 });
 
 function renderHeader () {
@@ -60,7 +63,7 @@ function initStrippedTable () {
 	var rows = table.children();
 	rows.each(function(index){
 		$(this).attr("id", "f-"+index);
-		$(this).find('td:last-child').html("formulario" + index);
+		$(this).find('td:last-child').html("<a href = 'editarFormulario.html?index=" + index + "' class = 'dark-font'>formulario" + index + "</a>");
 		if (index % 2 == 0){
 			$(this).addClass("stripped");
 		}
@@ -92,4 +95,29 @@ function addFormRow () {
 function saveForm(){
 	var title = $("input[name='nombreFormulario']").val();
 	alert("Formulario: " + title + "guardado");
+}
+
+function setFormTitle(){
+	if (document.URL.search("editarFormulario.html") != -1){
+		var title = $("input[name='nombreFormulario']");
+		title.attr("value", "formulario " + getUrlParameter("index"));
+	}
+}
+
+function getUrlParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+} 
+
+function exportar(){
+	//alert("IMPLEMENTAR");
 }

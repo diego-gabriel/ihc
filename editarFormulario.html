@@ -8,7 +8,6 @@
 	<script type="text/javascript" src = "javascript/manejoForm.js"></script>
 	<script type="text/javascript" src = "javascript/jquery.colorbox.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles/home.css">
-	<link rel="stylesheet" type="text/css" href="styles/colorbox.css">
 	<link rel="stylesheet" type="text/css" href="styles/login.css">
 </head>
 
@@ -27,7 +26,7 @@
 			<li onclick= "borrarFacturas()">Borrar factura(s)</li>
 			<li onclick="location.href='papeleraFactura.html'">Papelera</li>
 			<li onclick = 'saveForm()'>Guardar</li>
-			<li class = "inline"> Exportar</a></li>
+			<li onclick = 'exportar()'>Exportar</li>
 		</ul>
 	</div>
 	<div class = "clear"></div>
@@ -42,18 +41,27 @@
 				<th>Importe</th>
 				<th>Cod. de Control</th>
 			</tr>			
+			<tr>
+				<td>1<input type="checkbox"></td>
+				<td>12345678</td>
+				<td>351</td>
+				<td>16455323534</td>
+				<td>17-11-2014</td>
+				<td>14</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>2<input type="checkbox"></td>
+				<td>343636346</td>
+				<td>453</td>
+				<td>13552352</td>
+				<td>17-12-2014</td>
+				<td>350</td>
+				<td></td>
+			</tr>
 		</table>
 	</div>
 </div>
-
-<!-- This contains the hidden content for inline calls -->
-		<div style='display:none'>
-			<div id='inline_content' style='padding:10px; background:#fff;'>
-				<input type = "checkbox"> <label>Descargar como : Formulario1 (.pdf y .dex)</label> <br>
-				<input type = "checkbox"> <label>Enviar a: usuario@email.com</label><br>
-				<input type = "submit">
-			</div>
-		</div>
 
 </body>
 
